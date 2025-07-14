@@ -83,8 +83,8 @@ reset.addEventListener("click", () => {
     setTimeout(r(), 10000);
     click.play();
 });
-function r() {
-    console.log("hi");
+async function r() {
+    await click.play;
     location.reload();
 }
 
