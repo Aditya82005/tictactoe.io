@@ -84,7 +84,10 @@ reset.addEventListener("click", () => {
     click.play();
 });
 async function r() {
-    await click.play;
+    click.play;
+    await new Promise((resolve) => {
+        click.onended = resolve;
+    });
     location.reload();
 }
 
